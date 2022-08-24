@@ -304,6 +304,8 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
+
+
 /* skills section styling */
 
 .skills .title::after{
@@ -449,6 +451,7 @@ section .title::after{
 }
 
 /* contact section styling */
+
 .contact .title::after{
     content: "get in touch";
 }
@@ -630,6 +633,7 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+    
     .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
@@ -653,6 +657,7 @@ footer span a:hover{
     .services .serv-content .card{
         width: 100%;
     }
+
 }
 
 @media (max-width: 500px) {
@@ -685,3 +690,35 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
+
+
+
+/* Projects section styling */
+
+.video-container {
+    height: 500px;
+    width: 300px;
+    position: relative;
+
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+.video-container .caption {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  color: crimson;
+  padding: 10px;
+}
+
+
+
